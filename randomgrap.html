@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html lang="nl"> 
+<head> 
+	<title> randomgrap </title> 
+	<link rel="stylesheet" type="text/css" href="Poinformatica.css">
+</head> 
+<body> 
+	<header> 
+		random grap 
+	</header> 
+		<div id= "wrapper">
+	 <!-- navigatiebar -->
+	<nav>
+		<ul> 
+		<li class="focus"><a href="Poinformatica.html">Home</a>
+		</li> 
+		<li> <a href="top10.html">top10</a> </li> 
+		<li> <a href="verhalen.html">verhalen</a></li> 
+		<li> <a href="randomgrap.html">random grap</a> </li> 
+		<li> <a href="#">verschillende categorien</a> 
+			<ul> 
+				<li> <a href="sport.html">sport</a></li> 
+				<li> <a href="school.html">school</a></li> 
+				<li> <a href="dissen.html">dissen</a></li> 
+				<li> <a href="lengte.html">lengte</a> </li>
+			</ul> 
+		</li> 
+		</ul> 
+			 
+	</nav> 
+	<script>
+	function myFunction() {
+
+	// maak een array met een waarde van de volgende Strings
+	var grappen = [
+		"Heb je het koud? Ga dan in die hoek staan, die is 90 graden!",
+		"Ben je moe? Hier steek dan je vinger in het stopcontact.",
+		"Mag ik wat water. Mijn humor wordt namelijk een beetje droog.",
+		"Of er een draadje bij me los zit!? Ik ben toch geen robot.",
+	        "Spieken is zo'n naar woord, ik noem het liever teamwork.",
+		"Nu school weer is begonnen zit ik weer in mijn ritme, nu de melodie nog...", 
+		"Sommige mensen zijn net bakstenen, hard van binnen en van buiten.", 
+		"Mijn leven is net een vuilnisbak, het bestaan uit alleen maar rotzooi",
+		"Ik heb meer cellen dan een gevangenis."
+		];
+
+	/*
+	Math.floor() = rond een nummer af naar beneden in zijn geheel en returnt het resultaat
+	Math.random() = returnt een willekeurig getal tussen 0 en 1 (met behoorlijk veel decimalen achter de komma soms)
+	grappen.length() = returnt het aantal items in de array grappen[]
+
+	grappen [0] = "GRAP 1"
+	grappen [1] = "GRAP 2"
+	grappen [2] = "GRAP 3"
+	etc, etc
+
+	willekeurigeString[x] = grappen[omlaag afronden(willekeurig getal * aantal items in grappen[])];
+
+	dus, willekeurigeString[x] = grappen[y];
+	*/
+	var willekeurigeString = grappen[Math.floor(Math.random()*grappen.length)];
+
+	// verander de content van het element met het id "knop"
+    document.getElementById("knop").innerHTML = willekeurigeString;
+	}
+</script>
+
+<!-- knopje ter demonstratie, voert myFunction() uit -->
+<div id="klik">
+<button onclick="myFunction()">klik mij</button>
+</div>
+<!-- de id is knop, dus myFuntion() zal uitgevoerd worden -->
+<div id="knop"></div>
+
+	
+	
+		<footer> 
+			<br/>
+		 <!-- afbeeldingen als link -->
+			Heb je nou nog niet genoeg van deze grappen of zelf misschien een slechte grap!? 
+			<a href="http://instagram.com/slechte_grappen.htmlx"> <img src="instagram.jpg" alt="instagram" width="50" height="50"></a>
+			 <a href="https://twitter.com/SlechteGraphtml"> <img src="twitter.png" alt="twitter" width="50" height="50"></a>
+			 <a href="https://www.facebook.com/slechte.grappen.75"> <img src="facebook.png" alt="facebook" width="50" height="50"></a>
+			<br/> Bel dan nu 06236736 of check een van onze social media accounts! 
+		</footer> 
+	</div> 
+</body> 
+</html>
+ 
+	
